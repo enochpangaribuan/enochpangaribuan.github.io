@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/IALogo.png
+image: img/GameImage.png
 title: "Intergalactic Attack"
 date: 2026-28-01
 published: true
