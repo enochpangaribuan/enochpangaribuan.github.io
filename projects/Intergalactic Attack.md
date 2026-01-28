@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/GameImage.png
 title: "Intergalactic Attack"
-date: 2026-28-01
+date: 2026
 published: true
 labels:
   - JavaScript
