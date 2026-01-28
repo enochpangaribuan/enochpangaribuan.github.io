@@ -26,7 +26,7 @@ Compared to other programming languages, TypeScript takes an interesting middle 
 During development, the compiler acts as an early warning system that catches any mismatched types, missing properties, etc. This “early feedback” transformed how I approach writing code: instead of debugging after failure, I began thinking about my correctness and structure. 
 Because of this, TypeScript encourages good habits that will be beneficial for small scripts to large collaborative projects.
 
-<img width="600px" class="rounded mx-auto d-block" src="../img/TsSc.png">
+<img width="600px" class="rounded float-start pe-4" src="../img/TsSc.png">
 
 From the perspective of software development, TypeScript is a strong language choice. Its focus on type safety improves the maintainability and readability of large programs where understanding its intention matters just as much as its functionality. 
 Interfaces and types act as documentation that the compiler can validate, decreasing the dependence on comments that could become obsolete. While TypeScript can seem like it slows down development due to stricter requirements, the long-term benefits are fewer bugs, clearer contracts between components, and better collaboration. 
@@ -37,7 +37,7 @@ Such pros outweigh the friction.
 The idea of athletic software engineering, implemented through practice WODs, transforms my experience with programming. The WODs introduced time pressure and repetition, pushing me to recall syntax and concepts quickly rather than relying on extended reference checks. 
 Initially, it was stressful when it came to falling short of the requirements. But at the same time, the timed exercises exposed gaps in my knowledge that I would have never noticed if in a more relaxed environment. However, in the long run, this stress became enlightening because through repetition, I began to build confidence, and finding patterns also began to feel more natural. 
 
-<img width="400px" class="rounded mx-auto d-block" src="../img/RobotLiftingWeights.jpg">
+<img width="400px" class="rounded float-start pe-4" src="../img/RobotLiftingWeights.jpg">
 
 This style of learning is different from the traditional lecture-based form in that it prioritizes performance under constraint. Though it can be uncomfortable, it mirrors real-world software engineering scenarios where developers are required to make quick decisions, debug efficiently, and come up with solutions despite being given incomplete information. 
 The WODs format transformed abstract concepts into habits, not only by making a foundation from the purpose of TypeScript, but also by explaining how and when to use it effectively.
