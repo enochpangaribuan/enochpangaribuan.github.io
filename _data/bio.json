@@ -4,7 +4,6 @@
     "label": "Student",
     "picture": "https://github.com/enochpangaribuan.png",
     "email": "enochdp@hawaii.edu",
-    "phone": "808-940-1023",
     "website": "https://enochpangaribuan.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2028.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
@@ -18,12 +17,12 @@
     { "name": "Skateboarding" },
     { "name": "Jiu Jitsu" },
     { "name": "Robotics" },
-    { "name": "Life" }
+    { "name": "Coding" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "JavaScript", "Assembly", "Common Lisp" ]
+      "keywords": [ "C", "C++", "Java", "JavaScript", "Assembly" ]
     },
     {
       "name": "Toolsets/OS",
@@ -59,32 +58,38 @@
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "Naval Reserve Officer Training Corps",
+      "website": "https://manoa.hawaii.edu/undergrad/navalscience/",
+      "position": "Midshipman",
+      "startDate": "2024-08-05",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Key member of the organization, working to better assist others",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Served as a leader of a squad of under 10 highly motivated individuals",
+        "Serving as an instructor for physical training",
+        "Studied naval science topics, including naval history, leadership and ethics, and navigation"
       ]
     },
     {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "organization": "Journey of Faith Fellowship Church",
+      "position": "Children's Ministry Leader, Lead Musician",
+      "startDate": "2020",
+      "endDate": "Present",
+      "summary": "Active member and volunteer leader supporting youth development, worship services, and community engagement initiatives",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Lead guitarist and drummer during weekly worship services and special events",
+        "Supervise and mentor children in a structured, safe, and supportive learning environment",
+        "Serve as a role model by promoting respect, teamwork, and community values"
       ]
     }
   ],
   "awards": [
+    {
+      "title": "Naval Reserve Officer Training Corps Scholarship",
+      "date": "2024-Present",
+      "awarder": "State of Hawaii",
+      "summary": "Nationally competitive scholarship awarded to students demonstrating academic excellence, leadership potential, physical fitness, and commitment to serve as a commissioned officer in the U.S. Navy or Marine Corps."
+    }, 
     {
       "title": "B+ Scholarship",
       "date": "2024-Present",
@@ -94,7 +99,7 @@
   ],
   "references": [
     {
-      "name": "Available upon request"
+      "name": "Available upon request."
     }
   ]
 }
