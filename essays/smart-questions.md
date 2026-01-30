@@ -1,10 +1,10 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "RTFM/STFW"
 # All dates must be YYYY-MM-DD format!
 date: 2015-09-08
-published: false
+published: true
 labels:
   - Questions
   - Answers
@@ -13,87 +13,12 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## There's no such thing as a dumb question
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
-
-## What’s a smart question?
-
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
-
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
-
-```
-Q: python date of the previous month
-
-I am trying to get the date of the previous month with python. Here is what i've tried:
-
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
-
-```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
-
-## Conclusion
-
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+There’s a common saying that “there’s no such thing as a dumb question,” but in the technical world, that isn’t always true. Programmers spend countless hours developing solutions to complex problems, and along the way, it’s normal to encounter roadblocks that are difficult to overcome alone. When that happens, many turn to online communities like Stack Overflow, hoping other users can offer guidance. While getting an answer may seem straightforward, the key to receiving a helpful solution lies in asking the question correctly. Crafting a well-formed question with proper etiquette—demonstrating clarity, preparation, and respect for the community—is essential before anyone will take the time to provide meaningful assistance.
+	A great example of a “smart question” is the post from Stack Overflow that describes the problems reading large binary data streams from a serial port in Mathematica. The user explains that communication works normally for small data sizes but fails once the stream exceeds roughly 4992 bytes, where the received data becomes truncated. Instead of giving a vague complaint, the writer clearly defines the conditions of failure, the symptoms, and the environment in which the issue occurs. They specify the baud rate, data format, and software version. This allows the readers to understand the situation without having to request any basic clarification. This type of question shows careful consideration and respect for the time of potential responders.
+	The question also stands out because it includes a reproducible test setup. The user built a controlled experiment using an Arduino that sends a predictable sequence of binary values after receiving a size request from Mathematica. Because the data is organized and verifiable, others can easily check whether the same issue occurs on their systems. Also, the writer mentions their prior troubleshooting: they confirm the hardware works with other serial tools, test different buffer sizes, and note that additional reads do not recover missing bytes. This shows that they have already put in effort to diagnose the problem rather than expecting others to do all the work. 
+	Finally, the tone and framing play a role in making it a smart question. The user does not accuse the software of being broken but instead suggests that the issue “seems specific” to the interface and asks whether there might be a limitation or an error in their own method. This neutral, collaborative approach encourages the knowledgeable users to engage rather than become defensive. This question is precise, testable, and supported by evidence, which aligns with the points of effective technical communication. By combining all these things such as clarity, preparation, and humility, the writer increases the likelihood that they will receive a useful and respectful response.
+	On the other hand, an example of a “non smart” question of the same topic could be one that is vague, assumes the software is at fault, and provides almost zero useful information for someone trying to help. For example, a user might post: “Mathematica serial is broken, I’m trying to read data from my Arduino and it stops working when the data gets big. Smaller stuff is fine. I think Mathematica has a bug. How do I fix this?” At first it seems like a call for help but the body has nearly none of the details needed to diagnose the problem. It does not mention the Mathematica version, baud rate, exact amount of data causing the issue, or even a description of what “stops working” means.
+	On top of that, non-smart questions do not show any evidence of prior research or testing. The user here doesn’t show whether they tried other serial tools, experimented with buffer sizes, or checked error messages. There is also no code, data, or reproducible example. By asking “How do I fix this?” without providing such details leaves the responder to guess at the problem, which is frustrating and very inefficient. It shows a lack of effort or willingness to understand the system, which is exactly the type of behavior that ends up being ignored or dismissed.
+	Lastly, non-smart questions usually place the blame prematurely and fail to define the actual problem clearly. By claiming that Mathematica is broken, the user assumes that the whole issue comes from the software instead of considering potential mistakes in their approach. This question is also very general. It contains no specific target or goal for the responder to address. To sum up, non-smart questions are vague, unstructured, and unhelpful, making it unlikely that anyone would choose to invest time in providing a meaningful solution.
