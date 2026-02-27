@@ -36,6 +36,7 @@ My favorite experience with UI frameworks was building a carousel for a website 
 
 <img width="600px" class="rounded float-start pe-4" src="../img/SLSscreenshot1.png">
 
+<br><br>
 
 <img width="600px" class="rounded float-start pe-4" src="../img/SLSscreenshot2.png">
 
