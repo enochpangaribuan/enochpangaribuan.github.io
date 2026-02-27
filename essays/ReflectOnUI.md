@@ -20,7 +20,9 @@ One of the coolest parts of learning Bootstrap was getting hands-on with real we
 
 For example, creating a styled button in Bootstrap is much simpler than writing custom CSS from scratch:
 
-"<button class="btn btn-primary">Click Me</button>"
+```html
+<button class="btn btn-primary">Click Me</button>"
+```
 
 With just a few predefined classes, the button is already styled, spaced correctly, and responsive. Without a framework, I would need to manually define colors, padding, borders, hover effects, and responsiveness in CSS. Bootstrap handles all of that automatically.
 
