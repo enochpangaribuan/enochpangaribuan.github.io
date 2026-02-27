@@ -34,7 +34,9 @@ When I tried to change one small thing, sometimes three other things would shift
 
 My favorite experience with UI frameworks was building a carousel for a website recreation project. The carousel included two images and one video, all sliding automatically on a clean black background. At first, it seemed straightforward. But integrating different types of media into one responsive component required careful structure and attention to detail. I had to think about how the JavaScript behavior worked, how the layout affected the viewing experience, and how to make everything feel smooth and intentional.
 
-// SLS ex.
+<img width="600px" class="rounded float-start pe-4" src="../img/TsSc.png">
+
+<img width="600px" class="rounded float-start pe-4" src="../img/TsSc.png">
 
 When it finally worked exactly the way I imagined, it was extremely satisfying. That was the moment when I realized I was no longer just copying examples from documentation. I was actually using the framework creatively and confidently.
 
