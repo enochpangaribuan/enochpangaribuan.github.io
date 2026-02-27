@@ -32,9 +32,10 @@ That process was frustrating.
 
 When I tried to change one small thing, sometimes three other things would shift unexpectedly. I had to learn how containers, rows, columns, and breakpoints interacted with each other. I had to understand why certain classes worked together and why others conflicted. It forced me to think beyond “just make it look right” and instead understand the structure behind the framework. In that sense, the frustration was part of the learning process.
 
-My favorite experience with UI frameworks was building a carousel for a website recreation project. The carousel included two images and one video, all sliding automatically on a clean black background. At first, it seemed straightforward. But integrating different types of media into one responsive component required careful structure and attention to detail. I had to think about how the JavaScript behavior worked, how the layout affected the viewing experience, and how to make everything feel smooth and intentional.
+My favorite experience with UI frameworks was building a carousel for a website recreation project. The carousel included two images and one video, all sliding automatically on a clean black background. At first, it seemed straightforward. But integrating different types of media into one responsive component required careful structure and attention to detail. I had to think about how the HTML behavior worked, how the layout affected the viewing experience, and how to make everything feel smooth and intentional.
 
 <img width="600px" class="rounded float-start pe-4" src="../img/SLSscreenshot1.png">
+
 
 <img width="600px" class="rounded float-start pe-4" src="../img/SLSscreenshot2.png">
 
