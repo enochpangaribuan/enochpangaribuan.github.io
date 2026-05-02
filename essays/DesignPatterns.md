@@ -17,7 +17,8 @@ Design patterns in web interfaces are one of the most fascinating and underappre
 At their core, design patterns in UI/UX are recurring solutions to common visual and structural problems. Things like navigation bars, card layouts, modal dialogs, and grid systems are all examples of design patterns. They exist because certain problems — how to display content, how to guide a user's eye, how to organize information — come up again and again across different websites and applications.
 One of the most foundational patterns is the card component:
 
-```html<!-- A simple card pattern -->
+```
+html<!-- A simple card pattern -->
 <div class="card">
   <img src="thumbnail.jpg" alt="Preview" />
   <div class="card-body">
