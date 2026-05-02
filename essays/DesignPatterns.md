@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "ESLint = Efficient?"
+title: "Design Patterns"
 # All dates must be YYYY-MM-DD format!
 date: 2026-04-30
 published: true
@@ -12,35 +12,78 @@ labels:
 
 ## Design Patterns
 
-ESLint coding standards are an important part of modern programming, especially when working with JavaScript or TypeScript. In my experience, I find ESLint very useful overall. It helps keep code clean, organized, and easier to read. However, I also think that sometimes it can feel a little too strict about small details that may not be the most important issues in a program.
+Design patterns in web interfaces are one of the most fascinating and underappreciated aspects of front-end development. Unlike logic or functionality, design patterns operate almost invisibly — users rarely notice them when they are done well, but immediately feel their absence when they are not. In my experience, design patterns are deeply interesting to study, surprisingly tricky to get right, and absolutely essential for creating interfaces that feel professional and intuitive.
 
-One of the biggest benefits of ESLint is consistency. When multiple programmers work on the same project, everyone may have different habits. Some people use double quotes, others use single quotes. Some people use extra spaces, others don’t. ESLint forces everyone to follow the same rules. This makes the code look uniform and professional.
+At their core, design patterns in UI/UX are recurring solutions to common visual and structural problems. Things like navigation bars, card layouts, modal dialogs, and grid systems are all examples of design patterns. They exist because certain problems — how to display content, how to guide a user's eye, how to organize information — come up again and again across different websites and applications.
+One of the most foundational patterns is the card component:
 
-For example, ESLint might require single quotes instead of double quotes:
+html<!-- A simple card pattern -->
+<div class="card">
+  <img src="thumbnail.jpg" alt="Preview" />
+  <div class="card-body">
+    <h3 class="card-title">Article Title</h3>
+    <p class="card-description">A short summary of the content...</p>
+    <a href="#" class="card-link">Read More</a>
+  </div>
+</div>
 
-// code ex.
+This pattern appears everywhere — from e-commerce product listings to blog previews to dashboards. It works because it groups related information into a contained, scannable unit. The moment you break this pattern — for example, by mixing different card heights or inconsistent padding — the interface starts to feel disorganized, even if the content itself is fine. This is what makes design patterns so interesting: the visual logic is just as important as the functional logic.
 
-In this case, both versions work exactly the same. The program will run without problems either way. That is why sometimes these rules can feel unnecessary. Whether we use single or double quotes does not change how the program functions. It only changes how it looks.
+However, knowing a pattern exists and knowing how to apply it correctly are two very different things. Design patterns are tricky to refine because they are highly context-dependent. A navigation pattern that works beautifully for a portfolio site may feel completely wrong for a data dashboard. For example, a hamburger menu is a common mobile navigation pattern:
 
-Another example is extra blank lines at the end of a file. ESLint may complain if there are too many empty lines:
+css/* Hamburger menu - works great on mobile */
+.hamburger {
+  display: none;
+}
 
-// another code ex image
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
 
+  .nav-links {
+    display: none;
+  }
 
-Even though the code works perfectly fine, ESLint might warn that there are too many blank lines. Fixing this does not improve performance or logic. It only improves formatting. Sometimes it feels like time is being spent fixing small formatting issues instead of focusing on bigger programming problems.
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-However, even though some rules may seem minor, I still believe ESLint is very helpful. Clean and organized code is easier to read and maintain. For example, consistent indentation and spacing make a big difference:
+While this pattern is widely recognized and expected on mobile, using it on a desktop interface would feel awkward and counterintuitive. Knowing when to apply a pattern — and when to deviate from it — is where the real skill lies. I find this nuance genuinely challenging. It requires not just knowing the rules, but developing a sense for when to follow them and when to break them intentionally.
 
-// code ex. image: 
+Spacing and visual rhythm are another area where design patterns are easy to get wrong. Consistent spacing creates a sense of harmony and professionalism:
 
-The second version is much easier to read. When projects become large, readability becomes extremely important. Other programmers need to understand the code quickly. ESLint helps enforce these formatting rules automatically, which saves time in the long run.
+css/* Inconsistent spacing - feels off -->
+.section-one { padding: 12px; }
+.section-two { padding: 20px; }
+.section-three { padding: 15px; }
 
-Another important benefit is catching real errors. ESLint does not only check formatting. It can also warn about unused variables or possible mistakes:
+/* Design pattern: spacing scale - feels cohesive */
+:root {
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
 
-// code ex. image
+.section { padding: var(--space-lg); }
 
-If result is never used, ESLint will give a warning. This helps programmers clean up unnecessary code and avoid confusion.
+The second approach uses a spacing scale — a common design pattern where spacing values follow a consistent ratio. This makes the layout feel intentional and balanced rather than arbitrary. Small decisions like this have an outsized impact on how polished an interface feels.
 
-In conclusion, I believe ESLint coding standards are very useful overall. They help improve cleanliness, organization, and teamwork in programming projects. At the same time, I think some rules can feel too strict or overly focused on small details like quotation marks or blank lines. Even so, the benefits of having consistent and readable code outweigh the minor frustrations. ESLint may sometimes feel picky, but it ultimately helps programmers write better and more professional code.
+Typography hierarchy is another pattern that is deceptively simple but difficult to master. A well-structured type hierarchy guides the user's eye through a page naturally:
 
+css/* Clear typographic hierarchy */
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 1.75rem; font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 500; }
+p  { font-size: 1rem;    font-weight: 400; line-height: 1.6; }
+
+When heading sizes are too similar, or body text too large, the visual hierarchy collapses. Users have to work harder to understand the page structure. This is why I believe design patterns are not just about aesthetics — they are fundamentally about communication. A good interface communicates structure, priority, and flow without the user ever having to consciously think about it.
+
+In conclusion, design patterns are one of the most rewarding areas of front-end development to explore. They are interesting because they reveal the underlying logic of visual design — the idea that good interfaces are not accidental but built on repeatable, thoughtful structures. They are tricky to refine because context matters enormously, and applying a pattern incorrectly can be just as harmful as not using one at all. But above all, they are important because the visual appeal and usability of a website depend directly on how well these patterns are understood and executed. Learning design patterns has made me a more thoughtful developer — one who considers not just whether code works, but whether the experience it creates is clear, consistent, and visually compelling.
 
